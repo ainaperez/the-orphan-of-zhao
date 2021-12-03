@@ -4,6 +4,7 @@
  */
 
 import * as bootstrap from 'bootstrap';
+import AOS from 'aos';
 
 // import 'some-node-module';
 // import SomeModule from 'some-node-module';
@@ -11,6 +12,8 @@ import * as bootstrap from 'bootstrap';
 /**
  * Write any other JavaScript below
  */
+
+AOS.init();
 
  /* ----- Burger Menu function ------*/
 
@@ -124,17 +127,6 @@ function checkEmail(input) {
     }
 }
 
-//check passwords matching
-
-function checkPasswordMatch(input1, input2){
-if(input1.value !== input2.value){
-    showError(input2, 'Passwords do not match')
-}else{
-    showSuccess(input1);
-    showSuccess(input2);
-}
-
-}
 
 //check age
 
@@ -146,6 +138,18 @@ function checkAge(input){
         showError(input, `${getFieldName(input)} is not valid`)
     }
 }
+
+//check passwords matching
+
+function checkPasswordMatch(input1, input2){
+  if(input1.value !== input2.value){
+      showError(input2, 'Passwords do not match')
+  }else{
+      showSuccess(input1);
+      showSuccess(input2);
+  }
+  
+  }
 
 window.onload = () =>{
     var inputs = [username, age, personalUrl, email, password, confirmPassword];

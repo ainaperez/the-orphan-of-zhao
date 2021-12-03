@@ -1,66 +1,66 @@
 //----- About.html -----//
 .about-wrapper {
 
-    margin: 0 60px;
-    text-align: justify;
-  
-    h1, h2{
-        text-align: center;
-    }
-    h1,
-    img,
-    h2,
+  margin: 0 60px;
+  text-align: justify;
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  h1,
+  img,
+  h2,
+  p {
+    margin-bottom: $sixSpace;
+  }
+}
+
+.img-div {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.blockquote {
+  width: 80%;
+  padding: .5em 10px;
+  margin: 0 auto $sixSpace auto;
+  font-family: $font-family-text;
+  font-size: larger;
+  font-style: italic;
+  text-align: center;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+}
+
+.fun-facts {
+  margin-bottom: $sixSpace;
+  text-align: center;
+}
+
+.about-ol {
+
+  width: 70%;
+  margin: auto;
+
+  li {
+    margin-left: 6vh;
+    font-family: $font-family-title;
+    font-size: 2.5rem;
+
     p {
       margin-bottom: $sixSpace;
     }
+  }
+}
 
-  }
-  
-  .img-div {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-  
-    img {
-      max-width: 100%;
-    }
-  }
-  
-  .blockquote {
-    width: 80%;
-    padding: .5em 10px;
-    margin: 0 auto $sixSpace auto;
-    font-family: $font-family-text;
-    font-size: larger;
-    font-style: italic;
-    text-align: center;
-    background: #f9f9f9;
-    border-left: 10px solid #ccc;
-  }
-  
-  .fun-facts {
-    text-align: center;
-    margin-bottom: $sixSpace;
-  }
-  
-  .about-ol {
-  
-    width: 70%;
-    margin: auto;
-  
-    li {
-      margin-left: 6vh;
-      font-family: $font-family-title;
-      font-size: 2.5rem;
-  
-      p {
-        margin-bottom: $sixSpace;
-      }
-    }
-  }
-  
-  .copyright-p {
-    font-size: smaller;
-    text-align: center;
-  }
-  
+.copyright-p {
+  font-size: smaller;
+  text-align: center;
+}

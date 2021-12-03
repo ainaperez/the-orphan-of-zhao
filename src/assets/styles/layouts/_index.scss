@@ -2,376 +2,371 @@
 
 //classes that don't need grid support//
 .index-grid {
-    height: 91.7vh;
-    margin-left: 60px;
+  height: 91.7vh;
+  margin-left: 60px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.presents-p {
+  display: block;
+  float: right;
+  font-family: $font-family-title;
+  font-size: 2.5rem; //40px;
+  text-transform: uppercase;
+}
+
+.main-title {
+  position: relative;
+  z-index: 1;
+  display: block;
+  float: right;
+  padding-top: 0;
+  margin: $sixSpace 0;
+  font-family: url("../fonts/aileron/Aileron-Heavy.otf"), $font-family-title;
+  font-size: 8rem; //128px
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.author-p {
+  display: block;
+  float: right;
+}
+
+.face-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -4;
+  float: right;
+  width: auto;
+  height: 700px;
+  margin-top: -6vh;
+  margin-right: -100px;
+}
+
+.yellow-svg {
+  position: absolute;
+  z-index: -4;
+  margin-left: -500px;
+}
+
+.yellow-rect {
+  display: inline-block;
+  transform: rotate(-20deg);
+  fill: $yellow;
+}
+
+.red-svg {
+  position: sticky;
+  z-index: -5;
+  margin-top: -68vh;
+  margin-left: -200px;
+}
+
+.red-rect {
+  display: inline-block;
+  transform: rotate(20deg);
+  fill: $red;
+}
+
+.carousel {
+  margin-top: 40px;
+  background-color: $white;
+}
+
+.carousel-item {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.carousel-control-prev-icon {
+  background-color: $black;
+
+  :hover {
+    background-color: $yellow;
   }
-  
+}
+
+.carousel-control-next-icon {
+  background-color: $black;
+
+  :hover {
+    background-color: $yellow;
+  }
+}
+
+.checked {
+  width: auto;
+  color: $yellow;
+}
+
+.second-grid {
+  position: relative;
+  z-index: 1;
+  padding-bottom: $sixSpace;
+  margin: auto;
+  overflow-y: hidden;
+  background-color: $white;
+  border-top: 2px solid $black;
+}
+
+.squares {
+  position: relative;
+  z-index: 1;
+  width: 250px;
+  height: 250px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: $font-family-title;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  background-color: $yellow;
+}
+
+.square-links {
+  color: $black;
+  text-decoration: none;
+}
+
+.square-1 {
+  margin-left: 20%;
+}
+
+.square-2 {
+  margin-top: -10vh;
+  margin-left: 60%;
+}
+
+.square-3 {
+  margin-left: 35%;
+}
+
+.tiger-img {
+  position: absolute;
+  bottom: -50vh;
+  z-index: -5;
+  width: auto;
+  height: 700px;
+  margin-left: -25vw;
+}
+
+@media (max-width: 769px) {
   .hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+    margin-top: -10vh;
+    margin-left: 20px;
   }
-  
-  .presents-p {
-    display: block;
-    float: right;
-    font-family: $font-family-title;
-    font-size: 2.5rem; //40px;
-    text-transform: uppercase;
-  }
-  
-  .main-title {
-    position: relative;
-    z-index: 1;
-    display: block;
-    float: right;
-    padding-top: 0;
-    margin: $sixSpace 0;
-    font-family: url("../fonts/aileron/Aileron-Heavy.otf"), $font-family-title;
-    font-size: 8rem; //128px
-    text-align: left;
-    text-transform: uppercase;
-  }
-  
-  .author-p {
-    display: block;
-    float: right;
-  }
-  
+
   .face-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -4;
-    float: right;
-    width: auto;
-    height: 700px;
-    margin-top: -6vh;
-    margin-right: -100px;
+    margin-top: 300px;
+    margin-right: -320px;
   }
 
   .yellow-svg {
-    position: absolute;
-    z-index: -4;
-    margin-left: -500px;
+    margin-top: -35vh;
   }
-  
+
   .yellow-rect {
-    display: inline-block;
-    transform: rotate(-20deg);
-    fill: $yellow;
+
+    transform: rotate(0);
   }
-  
+
   .red-svg {
-    position: sticky;
-    z-index: -5;
-    margin-top: -68vh;
-    margin-left: -200px;
-  }
-  
-  .red-rect {
-    display: inline-block;
-    transform: rotate(20deg);
-    fill: $red;
-  }
-
-  .carousel {
-    margin-top: 40px;
-    background-color: $white;
-  }
-  
-  .carousel-item {
-    padding: 40px 0;
-    text-align: center;
-  }
-  
-  .carousel-control-prev-icon {
-    background-color: $black;
-  
-    :hover {
-      background-color: $yellow;
-    }
-  }
-
-  .carousel-control-next-icon {
-    background-color: $black;
-  
-    :hover {
-      background-color: $yellow;
-    }
-  }
-
-  .checked {
-    width: auto;
-    color: $yellow;
-  }
-
-  .second-grid {
-    position: relative;
-    z-index: 1;
-    padding-bottom: $sixSpace;
-    margin: auto;
-    overflow-y: hidden;
-    background-color: $white;
-    border-top: 2px solid $black;
+    margin-top: -90vh;
   }
 
   .squares {
+    margin: auto;
+  }
+
+  .square-1 {
+    margin-bottom: $sixSpace;
+  }
+
+  .square-2 {
+    margin-bottom: $sixSpace;
+  }
+}
+
+//classes that need grid support//
+
+@supports (display: grid) {
+  .index-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(4, 25%);
+    margin-left: 20px;
+  }
+
+  .hero-text {
+    display: contents;
+  }
+
+  .presents-p {
+    position: relative;
+    grid-row: 1/2;
+    grid-column: 1/3;
+    align-self: flex-end;
+  }
+
+  .main-title {
+    grid-row: 2/4;
+    grid-column: 1/4;
+    align-self: center;
+  }
+
+  .author-p {
     position: relative;
     z-index: 1;
-    width: 250px;
-    height: 250px;
-    padding-top: 10px;
-    padding-left: 10px;
-    font-family: $font-family-title;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    background-color: $yellow;
+    grid-row: 4/5;
+    grid-column: auto;
   }
-  
-  .square-links {
-    color: $black;
-    text-decoration: none;
+
+  .face-img {
+    position: relative;
+    grid-column: 4/auto;
+    grid-row: 1/5;
   }
-  
-  .square-1 {
-    margin-left: 20%;
-  }
-  
-  .square-2 {
-    margin-top: -10vh;
-    margin-left: 60%;
-  }
-  
-  .square-3 {
-    margin-left: 35%;
-  }
-  
-  .tiger-img {
-    position: absolute;
-    bottom: -50vh;
+
+  .red-svg {
+    position: sticky;
     z-index: -5;
-    width: auto;
-    height: 700px;
-    margin-left: -25vw;
+    margin-top: 25vh;
+    margin-left: -50vw;
   }
-  
+
+  .second-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 10vw);
+    grid-template-rows: repeat(10, 10vw);
+  }
+
+  .square-1 {
+    grid-row: 2/4;
+    grid-column: 3/5;
+    margin-left: 0; //resetting margins of no-grid suppport
+  }
+
+  .square-2 {
+    grid-row: 5/7;
+    grid-column: 7/9;
+    margin-left: 0;
+  }
+
+  .square-3 {
+    grid-row: 7/9;
+    grid-column: 4/6;
+    margin-left: 0;
+  }
+
+  .tiger-img {
+    grid-row: 7/11;
+  }
+
   @media (max-width: 769px) {
-    .hero-text {
-      margin-top: -10vh;
-      margin-left: 20px;
-    }
-  
-    .face-img {
-      margin-top: 300px;
-      margin-right: -320px;
-    }
-  
-    .yellow-svg {
-      margin-top: -35vh;
-    }
-  
-    .yellow-rect {
-  
-      transform: rotate(0);
-    }
-  
-    .red-svg {
-      margin-top: -90vh;
-    }
-  
-    .squares {
-      margin: auto;
-    }
-  
-    .square-1 {
-      margin-bottom: $sixSpace;
-    }
-  
-    .square-2 {
-      margin-bottom: $sixSpace;
-    }
-  }
-  
-  //classes that need grid support//
-  
-  @supports (display: grid) {
     .index-grid {
       display: grid;
-      grid-template-columns: repeat(5, 20%);
+      grid-template-columns: 100% 0 0 0 0;
       grid-template-rows: repeat(4, 25%);
-      margin-left: 20px;
     }
-  
-    .hero-text {
-      display: contents;
-    }
-  
+
     .presents-p {
       position: relative;
       grid-row: 1/2;
-      grid-column: 1/3;
+      grid-column: 1;
       align-self: flex-end;
     }
-  
+
     .main-title {
       grid-row: 2/4;
-      grid-column: 1/4;
+      grid-column: 1;
       align-self: center;
+      font-size: 6rem;
     }
-  
+
     .author-p {
       position: relative;
       z-index: 1;
       grid-row: 4/5;
-      grid-column: auto;
+      grid-column: 1;
     }
-  
+
     .face-img {
       position: relative;
-      grid-column: 4/auto;
       grid-row: 1/5;
+      grid-column: 1;
+      margin-left: 25%;
     }
-  
+
+    .yellow-svg {
+      position: absolute;
+      z-index: -4;
+      margin-left: 0;
+    }
+
+    .yellow-rect {
+      display: inline-block;
+      transform: rotate(0);
+      fill: $yellow;
+    }
+
+    .red-rect {
+      transform: rotate(0);
+    }
+
     .red-svg {
-      position: sticky;
-      z-index: -5;
-      margin-top: 25vh;
-      margin-left: -50vw;
+      margin-left: -100vw;
     }
-  
+
     .second-grid {
       display: grid;
-      grid-template-columns: repeat(8, 10vw);
-      grid-template-rows: repeat(10, 10vw);
-
-
+      grid-template-columns: repeat(1, 100vw);
+      grid-template-rows: repeat(10, 100px);
+      padding-bottom: $sixSpace * 3; //random multiplication to create more space on the bottom
     }
-  
+
+    .reviews {
+      grid-row: 1/2;
+      grid-column: 1;
+      margin: auto;
+    }
+
     .square-1 {
-      grid-row: 2/4;
-      grid-column: 3/5;
+      margin: auto;
       margin-left: 0; //resetting margins of no-grid suppport
+      grid-row: 3/5;
+      grid-column: 1;
     }
-  
+
     .square-2 {
-      grid-row: 5/7;
-      grid-column: 7/9;
+      margin: auto;
       margin-left: 0;
+      grid-row: 6/8;
+      grid-column: 1;
     }
-  
+
     .square-3 {
-      grid-row: 7/9;
-      grid-column: 4/6;
+      margin: auto;
       margin-left: 0;
+      grid-row: 9/11;
+      grid-column: 1;
     }
-  
+
     .tiger-img {
+      bottom: -25vh;
+      height: 500px;
       grid-row: 7/11;
     }
-  
-    @media (max-width: 769px) {
-      .index-grid {
-        display: grid;
-        grid-template-columns: 100% 0 0 0 0;
-        grid-template-rows: repeat(4, 25%);
-      }
-  
-      .presents-p {
-        position: relative;
-        grid-row: 1/2;
-        grid-column: 1;
-        align-self: flex-end;
-      }
-  
-      .main-title {
-        grid-row: 2/4;
-        grid-column: 1;
-        align-self: center;
-        font-size: 6rem;
-      }
-  
-      .author-p {
-        position: relative;
-        z-index: 1;
-        grid-row: 4/5;
-        grid-column: 1;
-      }
-  
-      .face-img {
-        position: relative;
-        grid-row: 1/5;
-        grid-column: 1;
-        margin-left: 25%;
-      }
-  
-      .yellow-svg {
-        position: absolute;
-        z-index: -4;
-        margin-left: 0;
-      }
-  
-      .yellow-rect {
-        display: inline-block;
-        transform: rotate(0);
-        fill: $yellow;
-      }
-  
-      .red-rect {
-        transform: rotate(0);
-      }
-  
-      .red-svg {
-        margin-left: -100vw;
-      }
-  
-      .second-grid {
-        display: grid;
-        grid-template-columns: repeat(1, 100vw);
-        grid-template-rows: repeat(10, 100px);
-        padding-bottom: $sixSpace * 3; //random multiplication to create more space on the bottom
-      }
-  
-      .reviews {
-        grid-row: 1/2;
-        grid-column: 1;
-        margin: auto;
-      }
-  
-      .square-1 {
-        margin: auto;
-        margin-left: 0; //resetting margins of no-grid suppport
-        grid-row: 3/5;
-        grid-column: 1;
-      }
-  
-      .square-2 {
-        margin: auto;
-        margin-left: 0;
-        grid-row: 6/8;
-        grid-column: 1;
-      }
-  
-      .square-3 {
-        margin: auto;
-        margin-left: 0;
-        grid-row: 9/11;
-        grid-column: 1;
-      }
-  
-      .tiger-img {
-        bottom: -25vh;
-        height: 500px;
-        grid-row: 7/11;
-      }
-    }
-    @media (max-width: 360px) {
-
-      .main-title {
-        font-size: 5rem;
-      }
+  }
+  @media (max-width: 360px) {
+    .main-title {
+      font-size: 5rem;
     }
   }
-  
-  
+}

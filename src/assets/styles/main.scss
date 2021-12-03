@@ -9,7 +9,6 @@
 
 @import "variables";
 
-
 /**
  * Import npm dependencies
  * see: https://v2.parceljs.org/features/module-resolution/
@@ -20,6 +19,7 @@
 // @import "@some-company/some-node-module";
 
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/aos/dist/aos.css";
 
 /**
  * Import layouts
@@ -31,7 +31,6 @@
 @import "layouts/about";
 @import "layouts/cast";
 @import "layouts/index";
-
 
 /**
  * Do NOT include anything else in this file!

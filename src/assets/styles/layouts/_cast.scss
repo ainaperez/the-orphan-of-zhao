@@ -1,93 +1,87 @@
 // ----- Cast -----//
-
 .cast-main {
-    height: 170vh;
-    overflow-y: hidden;
+  height: 170vh;
+  overflow-y: hidden;
+}
+
+.cast-flex {
+  position: relative;
+  z-index: 3;
+  width: 80%;
+  margin: auto;
+  margin-top: $sixSpace;
+}
+
+.row-flex {
+  position: initial;
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+
+  .card {
+    margin: 5px;
+    background-color: $yellow;
+    border: none;
   }
-  
+}
+
+.second-row-flex {
+
+  margin-top: $sixSpace;
+  margin-bottom: $sixSpace;
+}
+
+.cast-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.red-svg-cast {
+  position: relative;
+  z-index: -5;
+  margin-top: -50vh;
+  margin-left: -200px;
+}
+
+@media (max-width: 820px) { //slighlty higer width to help with some styling issues
+  .cast-main {
+    height: max-content;
+    overflow-y: scroll;
+
+    .red-svg-cast {
+      height: 50vh;
+      margin-bottom: -5px;
+    }
+  }
+
   .cast-flex {
-    position: relative;
-    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 80%;
-    margin: auto;
-    margin-top: $sixSpace;
+    margin-bottom: 50px;
   }
 
-  .row-flex{
-    position: initial;
-    z-index: 3;
-    display: flex;
-    justify-content: space-around;
-
-    .card {
-        background-color: $yellow;
-        border: none; 
-        margin: 5px;
-
-      }
+  .first-row-flex {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .second-row-flex {
-    
-    margin-top: $sixSpace;
-    margin-bottom: $sixSpace;
-  
-  }
-  
-  .cast-img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .red-svg-cast {
-    position: relative;
-    z-index: -5;
-    margin-top: -50vh;
-    margin-left: -200px;
-  }
-  
-  @media (max-width: 820px) { //slighlty higer width to help with some styling issues
-    .cast-main {
-      height: max-content;
-      overflow-y: scroll;
-        
-      .red-svg-cast {
-        height: 50vh;
-        margin-bottom: -5px;
-      }
-    }
-  
-    .cast-flex {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      width: 80%;
-      margin-bottom: 50px;
-    }
-
-    .first-row-flex {
-        margin-top: 0;
-        margin-bottom: 0;
-      flex-direction: column;
-  
-    }
-  
-    .second-row-flex {
+    flex-direction: column;
     margin-top: 0;
     margin-bottom: 0;
-      flex-direction: column;
+  }
+}
+@media (max-width: 360px) {
+  .red-svg-cast {
+    height: 50vh;
+    margin-bottom: -25%;
+  }
 
-    }
+  .cast-flex {
+    flex-direction: column;
+    width: 80%;
   }
-  @media (max-width: 360px) {
-    .red-svg-cast {
-      height: 50vh;
-      margin-bottom: -25%;
-    }
-  
-    .cast-flex {
-        flex-direction: column;
-        width: 80%;
-    }
-  }
-  
+}

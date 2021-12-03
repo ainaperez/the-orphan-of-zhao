@@ -1,93 +1,92 @@
 //----- Contact.html -----//
 #wrapper {
-    margin: auto;
-  }
-  
-  .mapouter {
-    margin: auto;
-    margin-top: $sixSpace;
-  }
+  margin: auto;
+}
 
-  .tickets{
-      width: 80%; 
-      margin: $sixSpace auto;
-      text-align: center;
+.mapouter {
+  margin: auto;
+  margin-top: $sixSpace;
+}
+
+.tickets {
+  width: 80%;
+  margin: $sixSpace auto;
+  text-align: center;
+}
+
+.form {
+  width: 50%;
+  padding: 20px;
+  margin: auto;
+  background-color: $white;
+  border: 1px solid $white;
+  border-radius: 10px;
+
+  h2 {
+    text-align: center;
   }
-  
-  .form {
-    width: 50%;
-    padding: 20px;
-    margin: auto;
-    background-color: $white;
-    border: 1px solid $white;
-    border-radius: 10px;
-  
-    h2 {
-      text-align: center;
-    }
-  }
-  
-  .input-group {
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-  }
-  
-  label {
-    font-family: $font-family-text;
-  }
-  
-  input {
-    padding: 10px;
-    margin-top: 2px;
-    font-family: $font-family-text;
-    border: 2px solid rgb(172, 172, 172);
-    border-radius: 5px;
-  }
-  
-  input:focus {
-    border: 2px solid rgb(172, 172, 172);
-    border-radius: 5px;
-    outline: 0;
-  }
-  
-  .input-group.error input {
-    border: 2px solid $red;
-  }
-  
-  .input-group.success input {
-    border: 2px solid $yellow;
-  }
-  
-  small {
-    font-size: x-small;
-    visibility: hidden;
-  }
-  
-  .input-group.error small {
-    color: $red;
-    visibility: visible;
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    color: $black;
-    background-color: $yellow;
-    border: 1px solid $white;
-    border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: rgb(216, 148, 0);
-  }
-  
-  #resetBtn {
-    background-color: $yellow;
-  }
-  
-  #resetBtn:hover {
-    background-color: $red;
-  }
-  
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+label {
+  font-family: $font-family-text;
+}
+
+input {
+  padding: 10px;
+  margin-top: 2px;
+  font-family: $font-family-text;
+  border: 2px solid rgb(172, 172, 172);
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 2px solid rgb(172, 172, 172);
+  border-radius: 5px;
+  outline: 0;
+}
+
+.input-group.error input {
+  border: 2px solid $red;
+}
+
+.input-group.success input {
+  border: 2px solid $yellow;
+}
+
+small {
+  font-size: x-small;
+  visibility: hidden;
+}
+
+.input-group.error small {
+  color: $red;
+  visibility: visible;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  color: $black;
+  background-color: $yellow;
+  border: 1px solid $white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(216, 148, 0);
+}
+
+#resetBtn {
+  background-color: $yellow;
+}
+
+#resetBtn:hover {
+  background-color: $red;
+}
