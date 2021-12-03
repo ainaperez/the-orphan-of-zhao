@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta type="author" content="Aina Perez Serra">
+    <meta type="description" content="The Orphan of Zhao theater play website">
+    <title>The Orphan of Zhao theater play website</title>
+  </head>
+  <body>
+    <header class='header'>
+      <a href='./index.html'><img class='logo-theater' src='./assets/images/logo-theatre.png' alt='logo historian theater'></a>
+      <nav class='nav-bar'>
+        <ul class='nav-bar-list'>
+            <li class='nav-bar-element'><a href='./cast.html'>Cast</a></li>
+            <li class='nav-bar-element'><a href='./about.html'>About</a></li>
+            <li class='nav-bar-element'><a href='./contact.html'>Info & Contact</a></li>
+        </ul>
+
+        <i class="burger">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </i>
+
+      </nav>
+    </header>
+
+    <main>
+
+        <div id='wrapper'>
+
+            <h1>info & Contact</h1>
+
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="820" height="260" id="gmap_canvas" src="https://maps.google.com/maps?q=Farringdon%20Cowcross%20St,%20London%20EC1M%206BY,%20Regne%20Unit&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br><style>.mapouter{position:relative;text-align:right;height:260px;width:820px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:260px;width:820px;}</style></div></div>
+
+            <div class='tickets'>
+            <h2>Get your tickets</h2>
+
+            <p>Hurry up they are almost gone!</p>
+            
+            <div class='progress'>
+                <div class='progress-bar progress-bar-striped progress-bar-animated' role='progressbar' aria-valuenow='75' aria-valuemin='0' aria-valuemax='100' style='width: 75%'></div>
+              </div>
+            
+            </div>
+            
+            <form id='register-form' class='form'>
+
+                <h2>Register with us</h2>
+
+                <div class='input-group'>
+                    <label for='name'>Username</label>
+                    <input type='text' id='name' placeholder="Insert your name">
+                    <small>Error message</small>
+                 </div>
+
+                 <div class='input-group'>
+                    <label for='age'>Age</label>
+                    <input type='number' id='age' placeholder="Insert your age">
+                    <small>Error message</small>
+                 </div>
+    
+                 <div class='input-group'>
+                    <label for='email'>Email</label>
+                    <input type='email' id='email' placeholder='Insert your email'>
+                    <small>Error message</small>
+                </div>
+
+                <div class='input-group'>
+                    <label for='password'>Password</label>
+                    <input type='password' id='password' placeholder='Enter a password'>
+                    <small>Error message</small>
+                </div>
+
+                <div class='input-group'>
+                    <label for='confirm-password'>Confirm password</label>
+                    <input type='password' id='confirm-password' placeholder='Confirm password'>   
+                    <small>Error message</small>             
+                </div>
+
+                <button type='submit'>Submit</button>
+                <button type='reset' id='resetBtn'>Reset all data</button>
+            </form>
+        </div>
+
+        
+    </main>
+
+    <footer class='footer'>
+
+        <a class='footer-child' href='./index.html'><img class='logo-theater' src='./assets/images/logo-theatre.png' alt='logo historian theater'></a>
+
+        <div class='nav-bar footer-nav-bar-list footer-links'>
+            <a class='footer-link' href='./cast.html'>Cast</a>
+            <a class='footer-link' href='./about.html'>About</a>
+            <a class='footer-link' href='./contact.html'>Info & Contact</a>
+        </div> 
+
+        <div class='footer-nav-bar-list social-icons'>
+            <a href='#' target='blank'><img class='social-icon' src='./assets/images/google.svg' alt='icon google'></a>
+            <a href='#' target='blank'><img class='social-icon' src='./assets/images/facebook.svg' alt='icon facebook'></a>
+            <a href='#' target='blank'><img class='social-icon' src='./assets/images/twitter.svg' alt='icon twitter'></a>
+        </div>
+  
+      </footer>
+      <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    </body>
+  </html>

@@ -1,50 +1,189 @@
+//------ General Styles -----//
+
+//reset of all margins and paddings
 * {
-  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  display: flex;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: $uoc-bg;
-  color: $uoc-corporate;
+  overflow-x: hidden;
 }
 
-.uoc-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  border-radius: 2rem;
+h1 {
+  padding-top: $sixSpace;
+  font-family: $font-family-title;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  text-transform: uppercase;
+  font-size: 3rem;
 }
 
-.uoc-logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
-  max-width: 200px;
-  height: auto;
+h2 {
+  font-family: $font-family-title;
+  font-size: 2.5rem;
+}
 
-  @media (min-width: $mqMinWidth) {
-    max-width: none;
+p {
+  font-family: $font-family-text;
+  font-size: 1rem;
+}
+
+a{
+  color:$black; 
+
+  :hover{
+    color: $red;
   }
 }
 
-.uoc-title {
-  font-family: $font-family-serif;
-  font-size: 24px;
-  font-weight: 700;
-  color: $uoc-corporate;
+//------ Header ------//
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background-color: $white;
+  border-bottom: 2px solid $black;
+}
 
-  @media (min-width: $mqMinWidth) {
-    font-size: 36px;
+.nav-bar {
+  font-family: $font-family-text;
+}
+
+.nav-bar-list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.nav-bar-element {
+  padding-left: 40px;
+
+  a {
+    color: $black;
+    text-decoration: none;
+  }
+
+  a:hover {
+    font-weight: bold;
+    color: $red;
   }
 }
+
+.burger {
+  position: relative;
+  top: 0;
+  right: 0;
+  display: none; //only appears on mobile
+
+  .burger-line {
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+    background-color: $red;
+  }
+}
+
+.logo-theater {
+  width: auto;
+  height: 30px;
+}
+
+@media (max-width: 769px) {
+  .nav-bar-list {
+    position: fixed;
+    top: 5rem;
+    left: -100%; // changes to 0 with Js when burger icon is clicked
+    z-index: 10;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: $white;
+    transition: .4s;
+
+    .nav-bar-element {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .nav-bar-list.active {
+    left: 0;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .burger.active .burger-line:nth-child(2) { //second line
+    opacity: 0;
+  }
+
+  .burger.active .burger-line:nth-child(1) { // first line
+    transform: translateY(11px) rotate(45deg);
+  }
+
+  .burger.active .burger-line:nth-child(3) { //third line
+    transform: translateY(-11px) rotate(-45deg);
+  }
+}
+
+//----- Footer -----//
+.footer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  background-color: $white;
+  border-top: 2px solid $black;
+}
+
+.footer-links {
+  width: 300px ;
+}
+
+.footer-link {
+  color: $black;
+  text-decoration: none;
+}
+
+.social-icons {
+  width: 125px;
+}
+
+.social-icon {
+  width: auto;
+  height: 30px;
+}
+
+.footer-nav-bar-list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  list-style: none;
+}
+
+@media (max-width: 769px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $sixSpace 0;
+  }
+
+  .social-icons {
+    width: auto;
+  }
+}
+
+

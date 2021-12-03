@@ -5,22 +5,143 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta type="author" content="Aina Perez Serra">
+    <meta type="description" content="The Orphan of Zhao theater play website">
+    <title>The Orphan of Zhao theater play website</title>
   </head>
   <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="test image" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
+    <header class='header'>
+      <a href='./index.html'><img class='logo-theater' src='./assets/images/logo-theatre.png' alt='logo historian theater'></a>
+      <nav class='nav-bar'>
+        <ul class='nav-bar-list'>
+          <li class='nav-bar-element'><a href='./cast.html'>Cast</a></li>
+          <li class='nav-bar-element'><a href='./about.html'>About</a></li>
+          <li class='nav-bar-element'><a href='./contact.html'>Info & Contact</a></li>
+        </ul>
+
+      <i class="burger">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </i>
+
+      </nav>
+    </header>
+
+    <main>
+
+      <svg width='200vw' height='632px' class='yellow-svg' >
+        <rect width="200vw" height="632px" class='yellow-rect'/>
+      </svg>
+
+      <div class='index-grid'>
+      <div class='hero-text'>
+        <p class='presents-p'>historian theatre presents:</p>
+
+        <h1 class='main-title'>The Orphan <br> of Zhao</h1>
+
+        <p class='author-p'>A play by Ji Junxiang</p>
+      </div>
+
+      <img class='face-img' src='./assets/images/face.svg'>
+
+      <svg width='200vw' height='632px' class='red-svg' >
+        <rect width="200vw" height="632px" class='red-rect'/>
+      </svg>
+
+      </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class='reviews'>
+                <div>
+                  <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='100'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='200'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='300'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='400'></span>
+                </div>
+                <p>Theater done right!</p>
+                <p>- The Daily Theater</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class='reviews'>
+              <div>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='100'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='200'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='300'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='400'></span>
+              </div>
+              <p>An amazing experience for everybody</p>
+              <p>- VanguArt</p>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class='reviews'>
+              <div>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='100'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='200'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='300'></span>
+                <span class='fa fa-star fa-2x checked stars' data-aos='zoom-in' data-aos-delay='400'></span>
+              </div>
+              <p>Top Acting</p>
+              <p>- Acting in the wild</p>
+            </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      <div class='second-grid'>
+        
+      
+
+      <div class='squares square-1' data-aos='fade-up'><a class='square-links' href='./cast.html'>Cast & characters</a></div>
+      <div class='squares square-2' data-aos='fade-up'><a class='square-links' href='./about.html'>About</a></div>
+      <div class='squares square-3' data-aos='fade-up'><a class='square-links' href='./contact.html'>Gallery</a></div>
+      <img class='tiger-img' src='./assets/images/tigers.svg'>
+
+      </div>
+
+    </main>
+
+    <footer class='footer'>
+
+      <a class='footer-child' href='./index.html'><img class='logo-theater' src='./assets/images/logo-theatre.png' alt='logo historian theater'></a>
+
+      <div class='nav-bar footer-nav-bar-list footer-links'>
+        <a class='footer-link' href='./cast.html'>Cast</a>
+        <a class='footer-link' href='./about.html'>About</a>
+        <a class='footer-link' href='./contact.html'>Info & Contact</a>
+      </div> 
+
+      <div class='footer-nav-bar-list social-icons'>
+        <a href='#' target='blank'><img class='social-icon' src='./assets/images/google.svg' alt='icon google'></a>
+        <a href='#' target='blank'><img class='social-icon' src='./assets/images/facebook.svg' alt='icon facebook'></a>
+        <a href='#' target='blank'><img class='social-icon' src='./assets/images/twitter.svg' alt='icon twitter'></a>
+      </div>
+
+    </footer>
+
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
   </body>
 </html>
